@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Sendi Manusia 🦴</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🦴 Belajar Sendi Manusia</h1>
+    <p>Media pembelajaran interaktif tentang jenis-jenis sendi pada tubuh manusia</p>
+  </header>
+
+  <nav>
+    <a href="#pengertian">Pengertian</a>
+    <a href="#jenis">Jenis Sendi</a>
+    <a href="#kuis">Kuis</a>
+  </nav>
+
+  <main>
+    <!-- Pengertian -->
+    <section id="pengertian" class="card">
+      <h2>📖 Apa itu Sendi?</h2>
+      <p>
+        <strong>Sendi</strong> adalah hubungan antar tulang yang memungkinkan terjadinya gerakan.
+        Sendi berfungsi sebagai penghubung tulang, memberikan fleksibilitas, dan meredam benturan.
+      </p>
+      <div class="info-box">
+        💡 Tanpa sendi, tubuh kita tidak bisa bergerak dengan leluasa!
+      </div>
+    </section>
+
+    <!-- Jenis Sendi -->
+    <section id="jenis">
+      <h2>🔍 Jenis-Jenis Sendi</h2>
+      <div class="grid">
+        <div class="joint-card" onclick="showDetail('engsel')">
+          <div class="icon">🚪</div>
+          <h3>Sendi Engsel</h3>
+          <p>Gerakan satu arah</p>
+        </div>
+        <div class="joint-card" onclick="showDetail('putar')">
+          <div class="icon">🔄</div>
+          <h3>Sendi Putar</h3>
+          <p>Gerakan memutar</p>
+        </div>
+        <div class="joint-card" onclick="showDetail('peluru')">
+          <div class="icon">⚽</div>
+          <h3>Sendi Peluru</h3>
+          <p>Gerakan segala arah</p>
+        </div>
+        <div class="joint-card" onclick="showDetail('pelana')">
+          <div class="icon">🐎</div>
+          <h3>Sendi Pelana</h3>
+          <p>Gerakan dua arah</p>
+        </div>
+        <div class="joint-card" onclick="showDetail('geser')">
+          <div class="icon">↔️</div>
+          <h3>Sendi Geser</h3>
+          <p>Gerakan bergeser</p>
+        </div>
+        <div class="joint-card" onclick="showDetail('kaku')">
+          <div class="icon">🔒</div>
+          <h3>Sendi Kaku</h3>
+          <p>Tidak bisa bergerak</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Detail -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Kuis -->
+    <section id="kuis" class="card">
+      <h2>🎯 Kuis Interaktif</h2>
+      <p id="question">Memuat soal...</p>
+      <div id="options"></div>
+      <p id="result"></p>
+      <button id="nextBtn" onclick="nextQuestion()" style="display:none">Soal Berikutnya →</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Media Belajar Sendi Manusia | Dibuat dengan ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
